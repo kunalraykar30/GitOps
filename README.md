@@ -1,6 +1,8 @@
 # GitOps
 EKS+Jenkins+ArgoCD+Prometheus
 
+While running the EKS makre sure the Access_key and Secret_key is updated in the code. 
+Best pratice is to use the AWS_CLI and configure the credentils so the Credentails are not hard coded. 
 
 cd 102_Jenkins_Deploy
 
