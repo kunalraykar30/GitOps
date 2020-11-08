@@ -4,6 +4,7 @@ EKS+Jenkins+ArgoCD+Prometheus
 
 cd 102_Jenkins_Deploy
 
+
 kubectl create -f ns-jenkins.yaml 
 kubectl create -f deploy-jenkins.yaml
 kubectl create -f svc-jenkins.yaml 
