@@ -20,6 +20,6 @@ Below is the sequence in the which the objects should be created -
 # kubectl create -f svc-jenkins.yaml 
 ```
 
-Please note that PV are not associated with namespace while PVC are associated with the namespace.
-Hence, namespace has been mentioned in the pvc-jenkins.yaml. Do note that /var/jenkins_home is the actual home dir of the Jenkins 
-
+Please: PV are not associated with namespace while PVC are associated with the namespace.
+Hence, namespace has been mentioned in the pvc-jenkins.yaml. Do note that /var/jenkins_home is the actual home dir of the Jenkins.
+Also, NodePort has been provided in the svc-jenkins but LoadBalancer can also be mentioned. 
