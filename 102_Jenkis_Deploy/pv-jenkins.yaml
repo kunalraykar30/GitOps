@@ -11,4 +11,4 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/c/Users/SAI/jenkins_home"  #hostpath can be defined as per your requirement. 
+    path: "/c/Users/SAI/jenkins_home"  #hostpath can be defined as per your requirement. Technically you should not use the hostpath :D
