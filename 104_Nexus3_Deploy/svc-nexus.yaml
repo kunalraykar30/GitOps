@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nexus-service
+#  namespace: ns-nexus
+  annotations:
+      prometheus.io/scrape: 'true'
+      prometheus.io/path:   /
+      prometheus.io/port:   '8081'
+spec:
+  selector: 
+    app: nexus-server
+  type: NodePort 		# LoadBalancer can used. 
+  ports:
+    - port: 80
+      targetPort: 8081
+      nodePort: 32200
